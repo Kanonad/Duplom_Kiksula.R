@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".PhilmActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:minHeight="48dp"
+
+            android:onClick="goBacK"
+            android:text="@string/butst"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:minHeight="48dp"
+
+            android:text="@string/butph"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/color"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imagDodomu"
+                    android:layout_width="132dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/dodomu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textDodomz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/nazv1"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="13sp"
+                        android:text="@string/dod1" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/dod2" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/dod3" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/dod4" />
+
+                    <Button
+                        android:id="@+id/butDodom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/prozor"
+                        android:minHeight="48dp"
+                        android:onClick="PeregActivity"
+                        android:text="@string/batPh1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/prozor"
+                android:background="@color/purple_700"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imagKiborg"
+                    android:layout_width="132dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/app_name"
+
+                    app:srcCompat="@drawable/kiborhy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textKiborz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/nazv2"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView147"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/kib1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="13sp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView146"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/kib2" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView142"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/kib3" />
+
+                    <TextView
+                        android:id="@+id/textView419"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/kib4"
+                        android:textSize="13sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butKibor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/prozor"
+                        android:minHeight="48dp"
+                        android:onClick="Pereg2Activity"
+                        android:text="@string/batPh1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/prozor"
+                android:background="@color/purple_700"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imagAtlantuda"
+                    android:layout_width="132dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/app_name"
+
+                    app:srcCompat="@drawable/atlantuda" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textAtlanz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/nazv3"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView171"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/atl1" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView161"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/atl2" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/atl3" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView191"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/atl4" />
+
+                    <Button
+                        android:id="@+id/butAtlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/prozor"
+                        android:minHeight="48dp"
+                        android:onClick="Pereg3Activity"
+                        android:text="@string/batPh1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/prozor"
+                android:background="@color/purple_700"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imagIvan"
+                    android:layout_width="132dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/app_name"
+
+                    app:srcCompat="@drawable/ivan_sula" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIvanz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/nazv4"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView172"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ivn1" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView126"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ivn2" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView122"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ivn3" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView129"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/inv4" />
+
+                    <Button
+                        android:id="@+id/butIban"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/prozor"
+                        android:minHeight="48dp"
+                        android:onClick="Pereg4Activity"
+                        android:text="@string/batPh1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/prozor"
+                android:background="@color/purple_700"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imagPlem"
+                    android:layout_width="132dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/app_name"
+
+                    app:srcCompat="@drawable/plem" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textPlemz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/nazv5"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView317"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ple1" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView136"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ple2" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView132"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ple3" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/textView139"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/ple4" />
+
+                    <Button
+                        android:id="@+id/butPlem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/prozor"
+                        android:minHeight="48dp"
+                        android:onClick="Pereg5Activity"
+                        android:text="@string/batPh1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
